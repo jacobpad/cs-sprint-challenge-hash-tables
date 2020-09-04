@@ -1,8 +1,18 @@
 def has_negatives(a):
     """
-    YOUR CODE HERE
+    - Make webster and cousin 
+    - Loop over list(a) and get the absolute value
+      - And get the absolute value append to result
+    - Return
     """
-    # Your code here
+    # Make webster and cousin
+    webster = {}
+    result = []
+
+    for num in a:
+        webster[num] = 1
+        if num != 0 and -num in webster:
+            result.append(abs(num))
 
     return result
 
